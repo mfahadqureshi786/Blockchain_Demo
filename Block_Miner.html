@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
+	<script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+	<button name="Mine Block" onclick="addBlock()"><span>Mine Block</span></button>
+	<label for="Difficulty">Mining Difficulty</label>
+	 <select name="Difficulty">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+</select> 
+	<div name="addTrasanction">
+	<label for="from">From</label>
+	<input type="text" name="from" value="" maxlength="12">
+	<label for="to">To</label>
+	<input type="text" name="to" value="" maxlength="12">
+	<label for="amount">amount</label>
+	<input type="text" name="amount" value="" maxlength="10">
+
+	<button type="submit" onclick="addTrasanction()">Add</button>
+
+
+	</div>
+	<div name="Wallet">
+		<label for="usert">User</label>
+	<input type="text" name="user" value="" maxlength="12">
+	<button type="submit" onclick="walletCalculate()" value="">Calculate</button>
+	<input type="text" name="balance" placeholder="balance" readonly="readonly" maxlength="10" disabled="true">
+	</div>
+	<div class="row">
+<div class="block">
+	<div class="blockHead">
+		<label for="BlockNo">Block#</label>
+		<span name="BlockNo">1</span>
+		<label for="Nonce">Nonce:</label>
+		<span name="Nonce">1</span>
+		<label for="No. of Transactions">No. of Transactions:</label>
+		<span name="No. of Transactions">0</span>
+	</div>
+	<div class="blockBody">
+		
+	</div>
+</div>
+</div>
+<script type="text/javascript" src="test.js"></script>
+</body>
+</html>
